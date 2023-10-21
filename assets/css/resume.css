@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+section{
+    font-family: 'Poppins', sans-serif;
+}
+/* RESUME SECTION */
+
+#res_border{
+   
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.resume_detail{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+}
+.resume_head{
+    text-align: center;
+}
+.resume_head h2{
+    margin-bottom: 1rem;
+}
+.resume_head p{
+    position: relative;
+    font-size: 1.5rem;
+    color: red;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.resume_head p::after{
+    
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:2rem;
+    background-color:black;
+}
+
+.resume_edu div{
+    margin-bottom: 2rem;
+}
+h5{
+    font-size: 20px;
+    color: rgb(206, 19, 19);
+}
+.resume_detail i{
+    font-size: 25px;
+    color:black;
+}
+
+.res{
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: 0 0 5px 5px rgb(228, 77, 77);
+}
+
+@media screen  and (max-width:600px){
+    .resume_grid{
+        display: grid;
+        gap:5px;
+        margin: 100px;
+    }
+}
+@media screen  and (min-width:663px){
+    .resume_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+        margin:100px;
+
+    }
+}
+
+@media screen  and (min-width:993px){
+    .resume_grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        margin: 100px;
+    }
+}
